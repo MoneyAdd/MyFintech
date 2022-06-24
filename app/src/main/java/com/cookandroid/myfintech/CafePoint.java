@@ -21,7 +21,7 @@ public class CafePoint extends AppCompatActivity {
         imgleft.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CafePoint.this, MainActivity.class);
+                Intent intent = new Intent(CafePoint.this, CafepointSafe.class);
                 startActivity(intent);
             }
         });
