@@ -11,6 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class StampActivity extends AppCompatActivity {
+    int cnt=0;
     TextView count;
     ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
     @Override
@@ -61,13 +62,19 @@ public class StampActivity extends AppCompatActivity {
                     if(i%2==0) {//0번째 or 2번째
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {//그 이미지뷰를
-                            imgArray.get(j).setImageResource(R.drawable.coffee1_1);//클릭하면 이걸로 바꾼다.
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee1_1);//클릭하면 이걸로 바꾼다.
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee1_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee1_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
@@ -75,13 +82,19 @@ public class StampActivity extends AppCompatActivity {
                     if(i%2==0) {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee2_1);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee2_1);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee2_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee2_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
@@ -89,13 +102,19 @@ public class StampActivity extends AppCompatActivity {
                     if(i%2==0) {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee3_1);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee3_1);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee3_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee3_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
@@ -103,19 +122,28 @@ public class StampActivity extends AppCompatActivity {
                     if(i==13-1){//13번째
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.frame56);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.frame56);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else if(i%2==0) {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee4_1);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee4_1);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee4_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee4_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
@@ -123,13 +151,19 @@ public class StampActivity extends AppCompatActivity {
                     if(i%2==0) {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee5_1);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee5_1);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee5_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee5_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
@@ -137,17 +171,28 @@ public class StampActivity extends AppCompatActivity {
                     if(i==24-1){//24번째
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.frame56);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.frame56);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     else if(i%2==0) {
                         int j=i;//for문의 i 인식 못함
-                            imgArray.get(j).setImageResource(R.drawable.coffee6_1);
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee6_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
                     }
                     else {
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {
-                            imgArray.get(j).setImageResource(R.drawable.coffee6_2);
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee6_2);
+                                count.setText(++cnt + "");
+                            }
                         });
                     }
                     break;
