@@ -13,186 +13,231 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class CafepointSafe extends AppCompatActivity {
-
-    private ImageView stemp1,stemp2,stemp3,stemp4,stemp5,stemp6,stemp7,stemp8,stemp9,stemp10,stemp11,stemp12,stemp13,stemp14,stemp15,stemp16,stemp17,stemp18,stemp19,stemp20;
-   private  ImageView back, gone;
-   private TextView textnum;
-
-   ArrayList<ImageView> arrayList;
+    int cnt=0;
+    TextView count;
+    ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cafepoint_safe);
 
-        back = findViewById(R.id.back);
-        textnum = findViewById(R.id.textnum);
+        textSet();
+        arrayImgSet();
+        imgClickSet();
+    }
 
-        arrayList.add(findViewById(R.id.stamp1));
-        arrayList.add(findViewById(R.id.stamp2));
-        arrayList.add(findViewById(R.id.stamp3));
-        arrayList.add(findViewById(R.id.stamp4));
-        arrayList.add(findViewById(R.id.stamp5));
-        arrayList.add(findViewById(R.id.stamp6));
-        arrayList.add(findViewById(R.id.stamp7));
-        arrayList.add(findViewById(R.id.stamp8));
-        arrayList.add(findViewById(R.id.stamp9));
-        arrayList.add(findViewById(R.id.stamp10));
-        arrayList.add(findViewById(R.id.stamp11));
-        arrayList.add(findViewById(R.id.stamp12));
-        arrayList.add(findViewById(R.id.stamp13));
-        arrayList.add(findViewById(R.id.stamp14));
-        arrayList.add(findViewById(R.id.stamp15));
-        arrayList.add(findViewById(R.id.stamp16));
-        arrayList.add(findViewById(R.id.stamp17));
-        arrayList.add(findViewById(R.id.stamp18));
-        arrayList.add(findViewById(R.id.stamp19));
-        arrayList.add(findViewById(R.id.stamp20));
+    private void textSet() {
+        count = findViewById(R.id.count);
+    }
 
+    private void arrayImgSet(){
+        imgArray.add(findViewById(R.id.stamp1));
+        imgArray.add(findViewById(R.id.stamp2));
+        imgArray.add(findViewById(R.id.stamp3));
+        imgArray.add(findViewById(R.id.stamp4));
+        imgArray.add(findViewById(R.id.stamp5));
+        imgArray.add(findViewById(R.id.stamp6));
+        imgArray.add(findViewById(R.id.stamp7));
+        imgArray.add(findViewById(R.id.stamp8));
+        imgArray.add(findViewById(R.id.stamp9));
+        imgArray.add( findViewById(R.id.stamp10));
+        imgArray.add( findViewById(R.id.stamp11));
+        imgArray.add( findViewById(R.id.stamp12));
+        imgArray.add( findViewById(R.id.stamp13));
+        imgArray.add( findViewById(R.id.stamp14));
+        imgArray.add( findViewById(R.id.stamp15));
+        imgArray.add( findViewById(R.id.stamp16));
+        imgArray.add( findViewById(R.id.stamp17));
+        imgArray.add( findViewById(R.id.stamp18));
+        imgArray.add( findViewById(R.id.stamp19));
+        imgArray.add( findViewById(R.id.stamp20));
+        imgArray.add( findViewById(R.id.stamp21));
+        imgArray.add( findViewById(R.id.stamp22));
+        imgArray.add( findViewById(R.id.stamp23));
+        imgArray.add( findViewById(R.id.stamp24));
+    }
+    private void imgClickSet(){
 
+        for(int i=0;i<imgArray.size();i++){
+            switch (i/4){//몇번째 줄인지
+                case 0://멘 첫번째줄
+                    if(i%2==0) {//0번째 or 2번째
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {//그 이미지뷰를
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee1_1);//클릭하면 이걸로 바꾼다.
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee1_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+                case 1:
+                    if(i%2==0) {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee2_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee2_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+                case 2:
+                    if(i%2==0) {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee3_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee3_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+                case 3:
+                    if(i==13-1){//13번째
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.frame56);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else if(i%2==0) {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee4_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee4_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+                case 4:
+                    if(i%2==0) {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee5_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee5_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+                case 5:
+                    if(i==24-1){//24번째
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.frame56);
+                                count.setText(++cnt + "");
+                                reset();
+                            }
+                        });
+                    }
+                    else if(i%2==0) {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee6_1);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    else {
+                        int j=i;//for문의 i 인식 못함
+                        imgArray.get(j).setOnClickListener(view -> {
+                            if(j==cnt) {
+                                imgArray.get(j).setImageResource(R.drawable.coffee6_2);
+                                count.setText(++cnt + "");
+                            }
+                        });
+                    }
+                    break;
+            }
+        }
+    }
+    private void reset(){
 
-
-//     for(int i =0; i<20; i++) {
-//         switch (i) {
-//
-//         }
-//     }
-
-
-
-//        stemp1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//               stemp1.setImageResource(R.drawable.frame29);
-//               textnum.setText("1");
-//            }
-//        });
-//
-//        stemp2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp2.setImageResource(R.drawable.frame30);
-//                textnum.setText("2");
-//            }
-//        });
-//
-//        stemp3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp3.setImageResource(R.drawable.frame29);
-//                textnum.setText("3");
-//            }
-//        });
-//
-//        stemp4.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp4.setImageResource(R.drawable.frame30);
-//                textnum.setText("4");
-//            }
-//        });
-//
-//        stemp5.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp5.setImageResource(R.drawable.frame33);
-//                textnum.setText("5");
-//            }
-//        });
-//
-//        stemp6.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp6.setImageResource(R.drawable.frame36);
-//                textnum.setText("6");
-//            }
-//        });
-//
-//        stemp7.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp7.setImageResource(R.drawable.frame33);
-//                textnum.setText("7");
-//            }
-//        });
-//        stemp8.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp8.setImageResource(R.drawable.frame36);
-//                textnum.setText("8");
-//            }
-//        });
-//
-//        stemp9.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp9.setImageResource(R.drawable.frame37);
-//                textnum.setText("9");
-//            }
-//        });
-//
-//        stemp10.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp10.setImageResource(R.drawable.frame40);
-//                textnum.setText("10");
-//            }
-//        });
-//
-//        stemp11.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp11.setImageResource(R.drawable.frame37);
-//                textnum.setText("11");
-//            }
-//        });
-//
-//        stemp12.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                stemp12.setImageResource(R.drawable.frame40);
-//                textnum.setText("12");
-//
-//                stemp13.setImageResource(R.drawable.frame56);
-//                textnum.setText("0");
-//                AlertDialog.Builder builder = new AlertDialog.Builder(CafepointSafe.this);
-//                builder.setTitle("리텀블 포인트 달성!!").setMessage("텀블러는 무려 일회용 플라스틱컵보다 13배의 /n 이산화탄소를 발생시킨다는 사실을 알고 계셨나요? /n " +
-//                        "텀블러의 사용도 좋지만, 지속적인 이용으로 진정한 환경을 위한 운동을 즐겨봐요!! ").setPositiveButton("리텀블 뽑기", null).create().show();
-//                AlertDialog alertDialog = builder.create();
-//                alertDialog.show();
-//
-//                stemp1.setImageResource(R.drawable.zeroline);
-//                stemp2.setImageResource(R.drawable.zeroline);
-//                stemp3.setImageResource(R.drawable.zeroline);
-//                stemp4.setImageResource(R.drawable.zeroline);
-//                stemp5.setImageResource(R.drawable.zeroline);
-//                stemp6.setImageResource(R.drawable.zeroline);
-//                stemp7.setImageResource(R.drawable.zeroline);
-//                stemp8.setImageResource(R.drawable.zeroline);
-//                stemp9.setImageResource(R.drawable.zeroline);
-//                stemp10.setImageResource(R.drawable.zeroline);
-//                stemp11.setImageResource(R.drawable.zeroline);
-//                stemp12.setImageResource(R.drawable.zeroline);
-//            }
-//        });
-
-
-
-
-
-
-
+        for(int i=0;i<imgArray.size();i++){
+            switch (i/4){//몇번째 줄인지
+                case 0://멘 첫번째줄
+                    imgArray.get(i).setImageResource(R.drawable.frame58);
+                    break;
+                case 1:
+                    imgArray.get(i).setImageResource(R.drawable.frame57);
+                    break;
+                case 2:
+                    imgArray.get(i).setImageResource(R.drawable.frame59);
+                    break;
+                case 3:
+                    if(i==13-1){//13번째
+                        imgArray.get(i).setImageResource(R.drawable.frame56_1);
+                    }
+                    else {
+                        imgArray.get(i).setImageResource(R.drawable.frame42);
+                    }
+                    break;
+                case 4:
+                    imgArray.get(i).setImageResource(R.drawable.frame48);//클릭하면 이걸로 바꾼다.
+                    break;
+                case 5:
+                    if(i==24-1){//24번째
+                        imgArray.get(i).setImageResource(R.drawable.frame56_1);
+                    }
+                    else {
+                        imgArray.get(i).setImageResource(R.drawable.frame50);
+                    }
+                    break;
+            }
+        }
+        cnt=0;
+        count.setText(cnt+"");
     }
 
 

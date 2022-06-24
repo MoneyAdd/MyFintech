@@ -5,17 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CafepointSafe">
-
+    tools:context=".StampActivity">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:src="@drawable/frame1"
+        android:src="@drawable/cloud"
         android:adjustViewBounds="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
+    <!-- <ImageViewp
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector4"
+        android:layout_marginLeft="137dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector5"
+        android:layout_marginLeft="37dp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vector6"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -24,7 +48,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:id="@+id/back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -75,7 +98,7 @@
                     android:textSize="16dp"
                     android:textStyle="bold"/>
                 <TextView
-                    android:id="@+id/textnum"
+                    android:id="@+id/count"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="4dp"
@@ -100,10 +123,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-
-
-
-
             <ImageView
                 android:id="@+id/stamp1"
                 android:layout_width="wrap_content"
@@ -111,8 +130,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
-
+                android:src="@drawable/frame58"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -122,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame58"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -131,7 +149,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame58"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -141,7 +159,7 @@
                 android:layout_weight="1"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame58"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -161,7 +179,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame57"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -171,7 +189,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame57"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -180,7 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame57"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -190,7 +208,7 @@
                 android:layout_weight="1"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame57"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -210,7 +228,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame59"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -220,7 +238,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame59"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -229,7 +247,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame59"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
             <ImageView
@@ -239,10 +257,9 @@
                 android:layout_weight="1"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="24dp"
-                android:src="@drawable/zeroline"
+                android:src="@drawable/frame59"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
-
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -259,7 +276,7 @@
                 android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
-                android:src="@drawable/frame42"
+                android:src="@drawable/frame56_1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
@@ -296,18 +313,18 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="29dp"
+            android:layout_weight="1"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
             <ImageView
                 android:id="@+id/stamp17"
-                android:layout_width="wrap_content"
+                android:layout_width="97dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginStart="16dp"
                 android:layout_marginBottom="24dp"
+                android:layout_weight="1"
                 android:src="@drawable/frame48"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
@@ -337,13 +354,59 @@
                 android:layout_weight="1"
                 android:layout_marginRight="16dp"
                 android:layout_marginTop="24dp"
+                android:src="@drawable/frame48"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/stamp21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/frame50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/stamp22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_weight="1"
+                android:src="@drawable/frame50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/stamp23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="24dp"
+                android:src="@drawable/frame50"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+            <ImageView
+                android:id="@+id/stamp24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="24dp"
                 android:src="@drawable/frame56_1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
         </LinearLayout>
     </LinearLayout>
-
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
