@@ -174,6 +174,7 @@ public class StampActivity extends AppCompatActivity {
                             if(j==cnt) {
                                 imgArray.get(j).setImageResource(R.drawable.frame56);
                                 count.setText(++cnt + "");
+                                reset();
                             }
                         });
                     }
@@ -198,5 +199,42 @@ public class StampActivity extends AppCompatActivity {
                     break;
             }
         }
+    }
+    private void reset(){
+
+        for(int i=0;i<imgArray.size();i++){
+            switch (i/4){//몇번째 줄인지
+                case 0://멘 첫번째줄
+                        imgArray.get(i).setImageResource(R.drawable.frame58);
+                    break;
+                case 1:
+                        imgArray.get(i).setImageResource(R.drawable.frame57);
+                    break;
+                case 2:
+                    imgArray.get(i).setImageResource(R.drawable.frame59);
+                    break;
+                case 3:
+                    if(i==13-1){//13번째
+                        imgArray.get(i).setImageResource(R.drawable.frame56_1);
+                    }
+                    else {
+                        imgArray.get(i).setImageResource(R.drawable.frame42);
+                    }
+                    break;
+                case 4:
+                    imgArray.get(i).setImageResource(R.drawable.frame48);//클릭하면 이걸로 바꾼다.
+                    break;
+                case 5:
+                    if(i==24-1){//24번째
+                        imgArray.get(i).setImageResource(R.drawable.frame56_1);
+                    }
+                    else {
+                        imgArray.get(i).setImageResource(R.drawable.frame50);
+                    }
+                    break;
+            }
+        }
+        cnt=0;
+        count.setText(cnt+"");
     }
 }
