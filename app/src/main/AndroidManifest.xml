@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFintech">
         <activity
+            android:name=".PaymentHistory"
+            android:exported="false" />
+        <activity
+            android:name=".MainPage"
+            android:exported="false" />
+        <activity
             android:name=".Mape"
             android:exported="false" />
         <activity
