@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFintech">
         <activity
-            android:name=".MyPage"
+            android:name=".Mape"
+            android:exported="false" />
+        <activity
+            android:name=".CafePoint_Safe"
             android:exported="false" />
         <activity
             android:name=".FinePassward1"
@@ -26,9 +29,6 @@
             android:exported="false" />
         <activity
             android:name=".SignUp3"
-            android:exported="false" />
-        <activity
-            android:name=".CafepointSafe"
             android:exported="false" />
         <activity
             android:name=".CafePoint"

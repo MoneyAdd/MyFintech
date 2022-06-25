@@ -1,25 +1,22 @@
 package com.cookandroid.myfintech;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class CafepointSafe extends AppCompatActivity {
+public class CafePoint_Safe extends AppCompatActivity {
+
     int cnt=0;
     TextView count;
     ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cafepoint_safe);
+        setContentView(R.layout.activity_cafe_point_safe);
 
         textSet();
         arrayImgSet();
@@ -60,7 +57,7 @@ public class CafepointSafe extends AppCompatActivity {
 
         for(int i=0;i<imgArray.size();i++){
             switch (i/4){//몇번째 줄인지
-                case 0://맨 첫번째줄
+                case 0://멘 첫번째줄
                     if(i%2==0) {//0번째 or 2번째
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {//그 이미지뷰를
@@ -239,6 +236,4 @@ public class CafepointSafe extends AppCompatActivity {
         cnt=0;
         count.setText(cnt+"");
     }
-
-
 }
