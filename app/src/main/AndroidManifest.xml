@@ -21,7 +21,7 @@
             android:name=".KakaoLoginActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MainPage"
             android:exported="false" />
         <activity
             android:name=".Mape"
@@ -48,7 +48,7 @@
             android:name=".CafePoint"
             android:exported="false" />
         <activity
-            android:name=".MainPage"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
