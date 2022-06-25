@@ -187,6 +187,12 @@
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:src="@drawable/frame89"
+                    android:adjustViewBounds="true"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:src="@drawable/underbar"
                     android:adjustViewBounds="true"
                     android:layout_marginTop="15dp"/>
@@ -198,7 +204,11 @@
                     android:src="@drawable/event"
                     android:layout_gravity="center"
                     android:layout_marginLeft="125dp"
-                    android:layout_marginTop="50dp"/>
+
+                    android:layout_marginTop="38dp"/>
+
+
+
 
             </FrameLayout>
 
@@ -209,13 +219,6 @@
 
 
 
-        <TextView
-            android:id="@+id/rogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="로그아웃"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"/>
         
         
         
