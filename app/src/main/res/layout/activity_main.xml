@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/startpage">
 
 
     <FrameLayout
@@ -15,14 +16,14 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="750dp"
-            android:src="@drawable/startpage"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop" />
 
         <EditText
             android:id="@+id/roginid"
             android:layout_width="350dp"
             android:layout_height="50dp"
             android:background="@drawable/rogin"
+            android:padding="8dp"
             android:layout_gravity="center"
             android:textColorHint="#CAE8FF"
             android:hint="  아이디를 입력하시오."/>
@@ -32,21 +33,22 @@
             android:id="@+id/roginpw"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:padding="8dp"
             android:background="@drawable/rogin"
             android:layout_gravity="center"
             android:textColorHint="#CAE8FF"
             android:hint="  비밀번호를 입력하시오."/>
-
-        <Button
-            android:id="@+id/btnrogin"
+        <TextView
             android:layout_marginTop="120dp"
+            android:id="@+id/btnrogin"
+            android:gravity="center"
+            android:text="확인"
             android:layout_width="350dp"
             android:layout_height="50dp"
+            android:background="@drawable/rogin"
             android:layout_gravity="center"
-            android:background="@drawable/roginbtn"
-            android:text="로그인"
-            android:textStyle="bold"
             android:textColor="#0081DE"/>
+
 
         <LinearLayout
             android:layout_marginTop="160dp"
@@ -73,12 +75,14 @@
 
         </LinearLayout>
 
-        <Button
+
+        <ImageButton
             android:id="@+id/kakaostart"
-            android:layout_width="350dp"
-            android:layout_height="40dp"
+            android:layout_width="335dp"
+            android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginTop="200dp"
+            android:src="@drawable/kakao"
             android:text="카카오톡으로 시작하기"/>
 
 

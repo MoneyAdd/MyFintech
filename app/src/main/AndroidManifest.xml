@@ -13,6 +13,9 @@
             android:name=".PaymentHistory"
             android:exported="false" />
         <activity
+            android:name=".KakaoLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainPage"
             android:exported="false" />
         <activity

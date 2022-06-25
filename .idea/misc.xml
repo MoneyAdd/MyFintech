@@ -21,7 +21,19 @@
         <entry key="..\:/Adroidstudio/MyFintech/app/src/main/res/layout/activity_sign_up_2.xml" value="0.3619791666666667" />
         <entry key="..\:/Adroidstudio/MyFintech/app/src/main/res/layout/activity_sign_up_3.xml" value="0.33" />
         <entry key="..\:/Adroidstudio/MyFintech/app/src/main/res/layout/activity_start_page.xml" value="0.33" />
-        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/MyFintech/app/src/main/res/drawable/siupnextbtn.xml" value="0.1495" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_cafe_point.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_cafe_point_safe.xml" value="0.33" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_fien_passward.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_fine_passward1.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_kakao_login.xml" value="0.17806484295845998" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_main_page.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_mape.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_payment_history.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_sign_up.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_sign_up_2.xml" value="0.358695652173913" />
+        <entry key="..\:/MyFintech/app/src/main/res/layout/activity_sign_up_3.xml" value="0.358695652173913" />
       </map>
     </option>
   </component>

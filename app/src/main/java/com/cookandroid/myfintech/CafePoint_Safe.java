@@ -3,6 +3,7 @@ package com.cookandroid.myfintech;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ public class CafePoint_Safe extends AppCompatActivity {
     int cnt=0;
     TextView count;
     ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
+    ImageView getRetumbl;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,8 +22,11 @@ public class CafePoint_Safe extends AppCompatActivity {
 
         textSet();
         arrayImgSet();
+        imgSet();
         imgClickSet();
     }
+
+
 
     private void textSet() {
         count = findViewById(R.id.count);
@@ -52,6 +57,12 @@ public class CafePoint_Safe extends AppCompatActivity {
         imgArray.add( findViewById(R.id.stamp22));
         imgArray.add( findViewById(R.id.stamp23));
         imgArray.add( findViewById(R.id.stamp24));
+    }
+    private void imgSet() {
+        getRetumbl = findViewById(R.id.getRetumbl);
+        getRetumbl.setOnClickListener(view ->{
+            getRetumbl.setVisibility(View.GONE);
+        });
     }
     private void imgClickSet(){
 
@@ -124,6 +135,7 @@ public class CafePoint_Safe extends AppCompatActivity {
                             if(j==cnt) {
                                 imgArray.get(j).setImageResource(R.drawable.frame56);
                                 count.setText(++cnt + "");
+                                getRetumbl.setVisibility(View.VISIBLE);
                             }
                         });
                     }
@@ -173,6 +185,7 @@ public class CafePoint_Safe extends AppCompatActivity {
                             if(j==cnt) {
                                 imgArray.get(j).setImageResource(R.drawable.frame56);
                                 count.setText(++cnt + "");
+                                getRetumbl.setVisibility(View.VISIBLE);
                                 reset();
                             }
                         });
