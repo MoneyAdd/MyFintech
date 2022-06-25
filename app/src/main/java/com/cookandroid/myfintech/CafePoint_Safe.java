@@ -2,6 +2,7 @@ package com.cookandroid.myfintech;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -14,7 +15,7 @@ public class CafePoint_Safe extends AppCompatActivity {
     int cnt=0;
     TextView count;
     ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
-    ImageView getRetumbl;
+    ImageView getRetumbl,getRetumbl2,qr;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +25,17 @@ public class CafePoint_Safe extends AppCompatActivity {
         arrayImgSet();
         imgSet();
         imgClickSet();
+
+        isQr();
+
+    }
+
+    private void isQr() {
+        Intent intent = getIntent();
+        boolean bool = intent.getBooleanExtra("qr",false);
+        if (bool==true){
+            qr.setVisibility(View.VISIBLE);
+        }
     }
 
 
@@ -62,6 +74,16 @@ public class CafePoint_Safe extends AppCompatActivity {
         getRetumbl = findViewById(R.id.getRetumbl);
         getRetumbl.setOnClickListener(view ->{
             getRetumbl.setVisibility(View.GONE);
+        });
+
+        getRetumbl2 = findViewById(R.id.getRetumbl2);
+        getRetumbl2.setOnClickListener(view ->{
+            getRetumbl2.setVisibility(View.GONE);
+        });
+
+        qr = findViewById(R.id.qr);
+        qr.setOnClickListener(view ->{
+            qr.setVisibility(View.GONE);
         });
     }
     private void imgClickSet(){
@@ -185,7 +207,7 @@ public class CafePoint_Safe extends AppCompatActivity {
                             if(j==cnt) {
                                 imgArray.get(j).setImageResource(R.drawable.frame56);
                                 count.setText(++cnt + "");
-                                getRetumbl.setVisibility(View.VISIBLE);
+                                getRetumbl2.setVisibility(View.VISIBLE);
                                 reset();
                             }
                         });

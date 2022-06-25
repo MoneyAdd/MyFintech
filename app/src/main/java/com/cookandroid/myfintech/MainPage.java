@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 
 public class MainPage extends AppCompatActivity {
 
@@ -18,7 +19,9 @@ public class MainPage extends AppCompatActivity {
 
         });
         findViewById(R.id.viewBarCode).setOnClickListener(view ->{
+            Log.d("DDDDD","dddddddddddd");
             Intent intent = new Intent(this, CafePoint_Safe.class);
+            intent.putExtra("qr",true);
             startActivity(intent);
 
         });
