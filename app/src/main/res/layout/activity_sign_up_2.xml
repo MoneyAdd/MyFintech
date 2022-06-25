@@ -67,7 +67,7 @@
                 android:id="@+id/nextBtn"
                 android:padding="0dp"
                 android:layout_marginLeft="290dp"
-                android:src="@drawable/nextBtn"/>
+                android:src="@drawable/nextbtn"/>
 
 
         </LinearLayout>
