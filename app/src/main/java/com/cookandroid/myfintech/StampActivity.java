@@ -124,7 +124,7 @@ public class StampActivity extends AppCompatActivity {
                         imgArray.get(j).setOnClickListener(view -> {
                             if(j==cnt) {
                                 imgArray.get(j).setImageResource(R.drawable.frame56);
-                                count.setText(++cnt + "");//
+                                count.setText(++cnt + "");
                             }
                         });
                     }

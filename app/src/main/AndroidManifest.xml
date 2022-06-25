@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFintech">
         <activity
+            android:name=".MainPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KakaoLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
