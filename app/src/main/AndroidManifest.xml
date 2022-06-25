@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFintech">
         <activity
+            android:name=".MyPage"
+            android:exported="false" />
+        <activity
+            android:name=".FinePassward1"
+            android:exported="false" />
+        <activity
             android:name=".FienPassward"
             android:exported="false" />
         <activity
