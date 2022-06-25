@@ -16,5 +16,9 @@ public class KakaoLoginActivity extends AppCompatActivity {
         // intent.setPackage("com.android.chrome");   // 브라우저가 여러개 인 경우 콕 찍어서 크롬을 지정할 경우
         startActivity(intent);
 
+        findViewById(R.id.img).setOnClickListener(view ->{
+            Intent i =new Intent(this,MainActivity.class);
+            startActivity(i);
+        });
     }
 }
