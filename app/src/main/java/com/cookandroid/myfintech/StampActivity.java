@@ -11,7 +11,7 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class StampActivity extends AppCompatActivity {
-    int cnt=0;
+    int cnt=0;;
     TextView count;
     ArrayList<ImageView> imgArray = new ArrayList<ImageView>();
     @Override
