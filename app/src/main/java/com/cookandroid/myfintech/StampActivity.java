@@ -20,7 +20,7 @@ public class StampActivity extends AppCompatActivity {
         setContentView(R.layout.activity_stamp);
 
         textSet();
-        arrayImgSet();
+        arrayImgSet();;
         imgClickSet();
     }
 
