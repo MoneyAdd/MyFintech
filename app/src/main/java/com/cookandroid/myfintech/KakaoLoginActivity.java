@@ -17,7 +17,7 @@ public class KakaoLoginActivity extends AppCompatActivity {
         startActivity(intent);
 
         findViewById(R.id.img).setOnClickListener(view ->{
-            Intent i =new Intent(this,MainActivity.class);
+            Intent i =new Intent(this,MainPageActivity.class);
             startActivity(i);
         });
     }
