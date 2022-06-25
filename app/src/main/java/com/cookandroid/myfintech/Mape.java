@@ -12,5 +12,9 @@ public class Mape extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mape);
 
+        findViewById(R.id.viewmore).setOnClickListener(view->{
+            Intent intent = new Intent(this, PaymentHistory.class);
+            startActivity(intent);
+        });
     }
 }
