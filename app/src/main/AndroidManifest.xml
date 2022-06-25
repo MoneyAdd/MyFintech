@@ -10,13 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFintech">
         <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp2"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp3"
+            android:exported="false" />
+        <activity
             android:name=".CafepointSafe"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".CafePoint"
             android:exported="false" />
         <activity
-            android:name=".CafePoint"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

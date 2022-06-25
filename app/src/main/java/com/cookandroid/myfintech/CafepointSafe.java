@@ -60,7 +60,7 @@ public class CafepointSafe extends AppCompatActivity {
 
         for(int i=0;i<imgArray.size();i++){
             switch (i/4){//몇번째 줄인지
-                case 0://멘 첫번째줄
+                case 0://맨 첫번째줄
                     if(i%2==0) {//0번째 or 2번째
                         int j=i;//for문의 i 인식 못함
                         imgArray.get(j).setOnClickListener(view -> {//그 이미지뷰를
